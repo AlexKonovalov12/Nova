@@ -41,7 +41,7 @@
 					<div class="col-md-6">
 						<div class="title-work-detail">
 							<h2>Наружная реклама</h2>
-							<p class="project">Баннеры, Вывески, Электронные табло,
+							<p class="project">Баннеры, Вывески, Электронные табло, Крышные установки
 							</p>
 							<div class="dash"></div>
 							<p>Наружная реклама одно из основных средств рекламы, носители которого размещаются вне помещений и рассчитаны преимущественно на визуальное восприятие изображения товара в посещаемых местах.</p>
@@ -54,7 +54,7 @@
 
 	<!-- Content -->
 	<div class="bg-main mt-full">
-		<div class="container">
+		<div class="container" id="work_container">
 			<div class="row">
 				<div class="col-md-8 offset-md-2 text-center">
 					<div class="web-detail">
@@ -92,7 +92,7 @@
 	<!-- Button Back -->
 	<div class="btn-back">
 		<a class="txt" href="work.html">Назад к портфолио</a>
-		<span> <a href="work.html"><img src="img/work-detail/back.png" alt="hh"></a> </span>
+		<span> <a href="work.html"><img id="back_image" src="img/work-detail/back_black.png" alt="hh"></a> </span>
 	</div>
 
 	<!-- Cursor -->
@@ -100,8 +100,18 @@
 	<div class="cursor-dot"></div>
 	<script>
 		const text = document.querySelector('.txt');
-		document.body.onscroll = function() {
-				text.classList.add('txtblack')
+		const backImage = document.getElementById('back_image')
+		const blackContainer = document.getElementById('work_container');
+		document.onscroll = function() {
+			const { bottom } = text.getBoundingClientRect();
+			const { top } = blackContainer.getBoundingClientRect();
+			if (top < bottom) {
+				text.classList.add('txtwhite')
+				backImage.src = "img/work-detail/back.png";
+			} else {
+				backImage.src = "img/work-detail/back_black.png"
+				text.classList.remove('txtwhite')
+			}
 		}
 	</script>
 
