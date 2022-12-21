@@ -59,6 +59,13 @@ secondary background : #2e2e2e;
 }
 
 @font-face {
+	font-family: 'Futura PT';
+	src: url(../css/webfonts/FuturaPT-BookObl.ttf);
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: 'NotCourier';
 	src: url(../css/webfonts/NotCourierSans.otf);
 	font-weight: 400;
@@ -97,7 +104,7 @@ secondary background : #2e2e2e;
 }
 
 body {
-	font-family: 'Futura PT', sans-serif;
+	font-family: 'NotCourier', sans-serif;
 	color: #fff;
 	line-height: 1;
 	height: 100%;
@@ -615,6 +622,7 @@ h5 {
 }
 
 .nav-lr {
+	font-family: 'Futura PT';
 	font-size: 14px;
 	font-weight: 400;
 	text-align: center;
@@ -1226,6 +1234,7 @@ h5 {
 	font-style: italic;
 	padding-right: 130px;
 	background: url('../img/works/detail-to.png') no-repeat right center;
+	font-family: 'Futura PT';
 }
 
 .btn-detail:hover {
@@ -1332,7 +1341,7 @@ h5 {
 }
 
 .web-detail h3 {
-	margin-bottom: 100px;
+	margin-bottom: 75px;
 }
 
 .web-detail h3:after {
@@ -1348,7 +1357,8 @@ h5 {
 p.project {
 	font-size: 12px;
 	font-style: italic;
-	color: #d7a150
+	color: #d7a150;
+	font-family: 'Futura PT';
 }
 
 .bg-main {
@@ -1442,6 +1452,7 @@ ul.prev-nex-btn {
 }
 
 ul.list-services li {
+	font-family: 'Futura PT';
 	display: block;
 	text-transform: uppercase;
 	color: #807b7b;
