@@ -1494,6 +1494,10 @@ ul.list-services {
 	color: #ec8d10;
 }
 
+#about_footer {
+	text-align: center;
+}
+
 .footer {
 	margin-top: 100px;
 	padding-bottom: 30px !important;
