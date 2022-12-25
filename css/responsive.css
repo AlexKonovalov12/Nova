@@ -179,7 +179,7 @@
                 [ 03 About ]
        ============================== */
     .about .main-detail-bg {
-        background-image: url('../img/background.jpg');
+        background-image: none;
         background-repeat: repeat;
         background-position: center;
         background-size: contain;
