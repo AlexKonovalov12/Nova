@@ -32,16 +32,12 @@
             $('.logo').addClass('-active'),
             $('.copyright').addClass('-active'),
             $('.phone').addClass('-active'),
-            $('.inner-page').addClass('-active'),
-            $('.outer-page').addClass('-active'),
             $('.decor-bottom').addClass('-active-left');
     }).on('mouseleave', function () {
         $('.left-anim').removeClass('-active'),
             $('.decor').removeClass('-active'),
             $('.logo').removeClass('-active'),
             $('.phone').removeClass('-active'),
-            $('.inner-page').removeClass('-active'),
-            $('.outer-page').removeClass('-active'),
             $('.copyright').removeClass('-active'),
             $('.decor-bottom').removeClass('-active-left');
     });
@@ -52,15 +48,11 @@
             $('.decor').addClass('-active'),
             $('.social').addClass('-active'),
             $('.button_container').addClass('-active'),
-            $('.inner-page').addClass('-active'),
-            $('.outer-page').addClass('-active'),
             $('.decor-bottom').addClass('-active-right');
     }).on('mouseleave', function () {
         $('.right-anim').removeClass('-active'),
             $('.decor').removeClass('-active'),
             $('.social').removeClass('-active'),
-            $('.inner-page').removeClass('-active'),
-            $('.outer-page').removeClass('-active'),
             $('.button_container').removeClass('-active'),
             $('.decor-bottom').removeClass('-active-right');
     });

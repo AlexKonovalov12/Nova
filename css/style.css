@@ -65,28 +65,6 @@ secondary background : #2e2e2e;
 	font-style: italic;
 }
 
-@font-face {
-	font-family: 'NotCourier';
-	src: url(../css/webfonts/NotCourierSans.otf);
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NotCourier';
-	src: url(../css/webfonts/NotCourierSans-Bold.otf);
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Kent';
-	src: url(../css/webfonts/Kent_4F_Printed_Shadowed.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-
-
 /* ======================================
 		     [ 01 Common CSS ]
 ========================================== */
@@ -150,7 +128,7 @@ a:hover {
 h1 {
 	font-size: 72px;
 	letter-spacing: 20px;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
 	margin: 0;
@@ -550,8 +528,6 @@ h1 {
 	z-index: 3;
 	background: #2e2e2e;
 	overflow: hidden;
-	background-image: url("../img/background.jpg");
-	background-repeat: repeat;
 }
 
 .outer-page {
@@ -564,19 +540,13 @@ h1 {
 	top: 0;
 	left: 0;
 	padding: 100px;
-	background-image: url('../img/Logo_NOVA_main2.png');
-	background-position: center;
-	background-size: contain;
+	background-image: url('../img/home-bg-layer.jpg');
 }
 
 .outer-page.\personal {
 	background-image: url('../img/homr-bg-personal.jpg') !important;
 	background-size: cover;
 	background-position: 60% bottom;
-}
-
-.outer-page.\-active {
-	background-image: none;
 }
 
 .inner-page {
@@ -587,15 +557,8 @@ h1 {
 	position: relative;
 	overflow: hidden;
 	background-color: black;
-	opacity: 0;
+	background-image: url('../img/home-bg.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
-	transition: opacity 1s linear;
-}
-
-.inner-page.\-active {
-	background-image: url('../img/Logo_NOVA_main.png');
-	opacity: 1;
 }
 
 .inner-page.\personal {
@@ -630,7 +593,7 @@ h5 {
 	z-index: 6;
 	top: 50%;
 	margin-top: -40px;
-	letter-spacing: 2.4px;
+	letter-spacing: 4px;
 	transition: all ease .5s;
 	transform: rotate(-90deg);
 }
@@ -789,8 +752,8 @@ h5 {
 .title {
 	text-align: center;
 	position: absolute;
-	top: 40%;
-	left: calc(50% - 100px);
+	top: 38%;
+	left: calc(50% - 105px);
 	z-index: 5;
 }
 
@@ -1020,7 +983,8 @@ h5 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	opacity: 0.6;
+	background-color: #000;
+	opacity: 0.5;
 }
 
 .img-obj-1 {
@@ -1043,7 +1007,8 @@ h5 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	opacity: 0.6;
+	background-color: #000;
+		opacity: 0.5;
 }
 
 .img-obj-2 {
@@ -1066,7 +1031,8 @@ h5 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	opacity: 0.6;
+	background-color: #000;
+		opacity: 0.5;
 }
 
 .img-obj-3 {
@@ -1089,7 +1055,8 @@ h5 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	opacity: 0.6;
+	background-color: #000;
+		opacity: 0.5;
 }
 
 .img-obj-4 {
@@ -1099,50 +1066,6 @@ h5 {
 	top: 30% !important;
 	background-position: center center;
 
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-.bg-work-5 {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	background: url('../img/works/5.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-}
-
-.img-obj-5 {
-	width: 50%;
-	height: 50%;
-	left: 40% !important;
-	top: 30% !important;
-	background-position: center center;
-	background: url('../img/works/obj-5.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-.bg-work-6 {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	background: url('../img/works/6.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-}
-
-.img-obj-6 {
-	width: 50%;
-	height: 50%;
-	left: 40% !important;
-	top: 30% !important;
-	background-position: center center;
-	background: url('../img/works/obj-6.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1177,7 +1100,7 @@ h5 {
 	display: block;
 	line-height: 60px;
 	font-size: 12px;
-	color: #000000;
+	color: white;
 	text-transform: uppercase;
 	opacity: .3;
 	-moz-transition: all .3s cubic-bezier(0.42, 0, 0, 0.995);
@@ -1200,7 +1123,7 @@ h5 {
 	text-decoration: none;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-image: linear-gradient(to right, #feac43, #feac43 50%, black 50%);
+	background-image: linear-gradient(to right, #feac43, #feac43 50%, white 50%);
 	background-size: 200% 100%;
 	background-position: 100%;
 	-webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
@@ -1217,7 +1140,7 @@ h5 {
 	background: url('../img/works/work-sub.png') no-repeat left center;
 	padding-left: 30px;
 	background-size: contain;
-	color: black;
+	color: white;
 	font-weight: 500;
 	letter-spacing: 1px;
 }
@@ -1227,7 +1150,7 @@ h5 {
 .btn-detail {
 	position: absolute;
 	font-size: 18px;
-	color: black;
+	color: white;
 	font-weight: 400;
 	font-style: italic;
 	padding-right: 130px;
@@ -1304,9 +1227,40 @@ h5 {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-image: url('../img/bg-light.png');
-	background-repeat: repeat;
+	background-color: #000;
 	z-index: -3;
+}
+
+#outdoor_background {
+	background-image: url('../img/works/work1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	opacity: 0.7;
+}
+
+#indoor_background {
+	background-image: url('../img/works/work4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	opacity: 0.7;
+}
+
+#polygraphy_background {
+	background-image: url('../img/works/work2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	opacity: 0.7;
+}
+
+#souvenirs_background {
+	background-image: url('../img/works/work3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	opacity: 0.7;
 }
 
 .title-work-detail {
@@ -1415,7 +1369,7 @@ ul.prev-nex-btn {
 }
 
 .title-about h2 {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 36px;
 	line-height: 50px;
 	letter-spacing: 2px;
@@ -1435,7 +1389,7 @@ ul.prev-nex-btn {
 }
 
 .about p {
-	color: #000;
+	color: rgb(254, 172, 67);
 	font-weight: 600;
 	margin: 0;
 }
@@ -1443,7 +1397,7 @@ ul.prev-nex-btn {
 .about h3 {
 	color: #000;
 	letter-spacing: 0;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 600;
 }
 
