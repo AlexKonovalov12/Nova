@@ -1401,6 +1401,11 @@ ul.prev-nex-btn {
 	font-weight: 600;
 }
 
+.icon_img {
+	width: 32px;
+	height: 32px;
+}
+
 ul.list-services li {
 	display: block;
 	text-transform: uppercase;
@@ -1440,10 +1445,6 @@ ul.list-services {
 }
 
 .icon {
-	font-size: 30px;
-	text-align: left;
-	position: relative;
-	z-index: 1;
 	margin: 0 0 30px 0;
 }
 
