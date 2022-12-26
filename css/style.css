@@ -855,7 +855,7 @@ h5 {
 /* Title animation */
 .spin:after {
 	font-family: 'Futura PT';
-	
+
 	content: "";
 	animation: spin 11s linear infinite;
 	-webkit-animation-name: spin;
@@ -993,7 +993,6 @@ h5 {
 	left: 40% !important;
 	top: 30% !important;
 	background-position: center center;
-
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1008,7 +1007,7 @@ h5 {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-color: #000;
-		opacity: 0.5;
+	opacity: 0.5;
 }
 
 .img-obj-2 {
@@ -1032,7 +1031,7 @@ h5 {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-color: #000;
-		opacity: 0.5;
+	opacity: 0.5;
 }
 
 .img-obj-3 {
@@ -1056,7 +1055,7 @@ h5 {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-color: #000;
-		opacity: 0.5;
+	opacity: 0.5;
 }
 
 .img-obj-4 {
@@ -1188,7 +1187,7 @@ h5 {
 }
 
 .txt:hover {
-	color:#ec8d10;
+	color: #ec8d10;
 }
 
 .txtwhite {
@@ -1389,13 +1388,13 @@ ul.prev-nex-btn {
 }
 
 .about p {
-	color: rgb(254, 172, 67);
+	color: black;
 	font-weight: 600;
 	margin: 0;
 }
 
 .about h3 {
-	color: #000;
+	color: rgb(254, 172, 67);
 	letter-spacing: 0;
 	font-size: 24px;
 	font-weight: 600;
